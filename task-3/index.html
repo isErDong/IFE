@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人简历</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clearfloat:after{
+            content: "";
+            display: block;
+            clear: both;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+        }
+        .clearfloat{
+            zoom:1;
+        }
+        body{
+            background-color: #00C091;
+            font-size: 16px;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        .wrap{
+            width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        /*header*/
+        .header{
+            height: 200px;
+            background-color: #292929;
+            color: #fff;
+        }
+        .info{
+            float: left;
+            width: 500px;
+            text-indent: 50px;
+            margin-top: 50px;
+        }
+        .info h1{
+            text-shadow: 3px 3px 5px #aaa;
+        }
+        .info p{
+            margin-top: 5px;
+            text-decoration: underline;
+        }
+        .photo{
+            float: right;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+        .photo img{
+            width: 100px;
+            height: 120px;
+            background-color: #ccc;
+            margin-top: 40px;
+        }
+
+        /*main*/
+        .left{
+            width: 500px;
+            height: 600px;
+            float: left;
+        }
+        .right{
+            width: 260px;
+            height: 600px;
+            float: right;
+            background-color: #F4F4F4;
+            padding: 0 20px;
+        }
+        .right li{
+            margin-top: 10px;
+            list-style: none;
+        }
+        .right li span{
+            font-weight: bold;
+        }
+        .right h2, .box h2{
+            border-bottom: 1px solid #ccc;
+            height: 50px;
+            line-height: 50px;
+            text-shadow: 3px 3px 2px #999;
+        }
+        .box{
+            margin: 30px 30px;
+        }
+        .box p{
+            font-size: 14px;
+            text-indent: 2em;
+            margin-top: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header clearfloat">
+            <div class="info">
+                <h1>老王</h1>
+                <p>为什么选择我？难道不是因为我帅吗？</p>
+            </div>
+            <div class="photo"><img src="#"></div>
+        </div> <!-- header end -->
+
+        <div class="main clearfloat">
+            <div class="right">
+                <h2>基本信息</h2>
+                <address>
+                    <ul>
+                        <li><span>所在城市：</span>武汉</li>
+                        <li><span>联系电话：</span>12345678911</li>
+                        <li><span>电子邮箱：</span>4567@qq.com</li>
+                    </ul>
+                </address>
+            </div>
+            <div class="left">
+                <div class="box">
+                    <h2>求职意向</h2>
+                    <p>没有东西没有东西没有东西没有东西没有东西没有东西没有东西没有东西</p>
+                </div>
+                <div class="box">
+                    <h2>教育背景</h2>
+                    <p>没有东西没有东西没有东西没有东西没有东西没有东西没有东西没有东西</p>
+                </div>
+                <div class="box">
+                    <h2>工作经验</h2>
+                    <p>没有东西没有东西没有东西没有东西没有东西没有东西</p>
+                </div>
+            </div> <!-- left end -->
+        </div>
+    </div>
+</body>
+</html>
