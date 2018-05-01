@@ -1,0 +1,33 @@
+.warp {
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
+}
+.header {
+	position: absolute;
+	float: left;
+	width: 200px;
+	height: 100%;
+	background: #65A5FA;
+	text-align: center;
+}
+.main{
+	float: right;
+	width: 550px;
+}
+.clearfix:after {
+	display: block;
+	content: "";
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	overflow: hidden;
+}
+.clearfix {zoom: 1;}
+
+span{
+	font-weight: bold;
+}
+h3{
+	font-size: 16px;
+}

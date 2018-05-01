@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三种不同简历</title>
+	<link rel="stylesheet" type="text/css" href="style_3.css">
+	<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	.topBar{
+		width: 100%;
+		height: 40px;
+		margin: 0 auto;
+		background-color: #ccc;
+		line-height: 40px;
+		text-align: center;
+	}
+	.topBar input{
+		width: 60px;
+		height: 20px;
+		text-align: center;
+		line-height: 20px;
+	}
+	</style>
+</head>
+<body>
+	<div class="topBar">
+		<input type="button" id="btn1" value="style-1">
+		<input type="button" id="btn2" value="style-2">
+		<input type="button" id="btn3" value="style-3">
+	</div>
+	<div class="warp clearfix">
+		<div class="header">
+		<h1>简历</h1>
+		</div>
+		<div class="main">
+			<div class="main-box">
+				<h2>基本信息</h2>
+				<div class="main-content">
+					<p><span>姓名</span> 张三&nbsp;&nbsp;&nbsp;&nbsp;<span>性别</span> 男&nbsp;&nbsp;&nbsp;&nbsp;<span>应聘职位</span> Web前端工程师</p>
+				</div>
+			</div>
+			<div class="main-box">
+				<h2>联系方式</h2>
+				<div class="main-content">
+					<p><address><span>手机</span> 12345678911&nbsp;&nbsp;&nbsp;&nbsp;<span>Email</span> <a href="#">123456@baidu.com</a>&nbsp;&nbsp;&nbsp;&nbsp;<span>个人主页</span> <a href="#">Github</a></address></p>
+				</div>
+			</div>
+			<div class="main-box">
+				<h2>能力描述</h2>
+				<div class="main-content">
+					<h3>技能能力</h3>
+					<p>熟练掌握HTML，CSS，JavaScript</p>
+					<h3>综合能力</h3>
+					<p>良好的沟通，主动积极，努力勤奋</p>
+				</div>
+			</div>
+			<div class="main-box">
+				<h2>教育经历</h2>
+				<div class="main-content">
+					<h3>本科</h3>
+					<p>百度前端技术学院小微学院</p>
+					<h3>研究生</h3>
+					<p>百度前端技术学院小微学院</p>
+				</div>
+			</div>
+			<div class="main-box">
+				<h2>项目经历</h2>
+				<div class="main-content">
+					<h3>小度小度</h3>
+					<p>作为前端工程师角色参与了ABC组件的开发</p>
+					<h3>SAN Doc</h3>
+					<p>作为文档工程师参与了SAN Doc编写</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var linkCss = document.getElementsByTagName('link')[0],
+		btn1 = document.getElementById('btn1'),
+		btn2 = document.getElementById('btn2'),
+		btn3 = document.getElementById('btn3');
+		btn1.onclick = function(){
+			linkCss.href = "style_1.css";
+		}
+		btn2.onclick = function(){
+			linkCss.href = "style_2.css";
+		}
+		btn3.onclick = function(){
+			linkCss.href = "style_3.css";
+		}
+	</script>
+</body>
+</html>
