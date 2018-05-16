@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.main, .sub, .extra{
+		float: left;
+		position: relative;
+		height: 300px;
+	}
+	.main{
+		width: 100%;
+		background-color: red;
+	}
+	.sub{
+		width: 190px;
+		background-color: blue;
+		margin-left: -100%;
+		left: -190px;
+	}
+	.extra{
+		width: 190px;
+		background-color: green;
+		margin-left: -190px;
+		right: -190px;
+	}
+	#wrap{
+		padding: 0 190px 0 190px;
+	}
+	</style>
+</head>
+<body>
+	<div id="page">
+		<div id="hd"></div>
+		<div id="wrap">
+			<div class="main"></div>
+			<div class="sub"></div>
+			<div class="extra"></div>
+		</div>
+		<div id="ft"></div>
+	</div>
+</body>
+</html>

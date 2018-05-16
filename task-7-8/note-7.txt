@@ -1,0 +1,42 @@
+flex 模型说明:
+
+	主轴（main axis）是沿着 flex 元素放置的方向延伸的轴（比如页面上的横向的行、纵向的列）。该轴的开始和结束被称为 main start 和 main end。
+
+	交叉轴（cross axis）是垂直于 flex 元素放置方向的轴。该轴的开始和结束被称为 cross start 和 cross end。
+
+	设置了 display: flex 的父元素被称之为 flex 容器（flex container）。
+
+在	 flex 容器中表现为柔性的盒子的元素被称之为 flex 项（flex item)
+
+flex-direction:它可以指定主轴的方向（弹性盒子子类放置的地方）— 它默认值是 row,你还可以使用 row-reverse 和 column-reverse 值反向排列 flex 项目。
+	示例：flex-direction: column  //列布局
+
+flex-wrap: 解决子代确实超出了它们的容器。flex-wrap: wrap;
+
+
+
+flex-flow: flex-direction 和 flex-wrap — 的缩写 flex-flow。
+	flex-direction: row;
+	flex-wrap: wrap;
+	替换为
+	flex-flow: row wrap;
+
+align-items : 控制主轴方向的对齐
+
+justify-content: 控制交叉轴方向的对齐
+
+order: 控制排序
+
+flex规定了弹性元素如何伸长或缩短以适应flex容器中的可用空间。这是一个简写属性，可以同时设置flex-grow, flex-shrink与flex-basis。
+
+
+常用对齐方式：
+水平居中：
+	1、行内元素：text-align: center;
+
+
+
+
+
+
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		min-width: 1000px;
+	}
+	.wrap{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	.clearfix:after{
+		content: "";
+		display: block;
+		clear: both;
+		overflow: hidden;
+		visibility: hidden;
+		height: 0;
+	}
+	.clearfix{
+		zoom: 1;
+	}
+	/*header*/
+	.header{
+		width: 100%;
+		height: 60px;
+		background-color: #333333;
+	}
+	.logo{
+		font-size: 2em;
+		color: #fff;
+		line-height: 60px;
+		float: left;
+	}
+	.nav{
+		font-size: 14px;
+	}
+	.nav li{
+		float: right;
+		list-style: none;
+	}
+	.nav li a{
+		color: #fff;
+		display: inline-block;
+		width: 60px;
+		text-align: center;
+		line-height: 60px;
+		text-decoration: none;
+	}
+	/*banner*/
+	.banner{
+		width: 100%;
+		height: 300px;
+		background-color: #66BB33;
+		position: relative;
+	}
+	.banner ul{
+		position: absolute;
+		bottom: 10px;
+		right: 200px;
+	}
+	.banner li{
+		float: left;
+		list-style: none;
+	}
+	.banner li a{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 1px solid #222;
+		background-color: #B2DD99;
+		text-align: center;
+		line-height: 20px;
+		margin-right: 5px;
+	}
+	/*.banner .bn-active{
+		height: 30px;
+		background-color: #fff;
+	}*/
+	/*main*/
+	.main-list{
+		width: 100%;
+		height: 60px;
+		border-bottom: 1px solid #ccc;
+	}
+	.main-list li{
+		float: left;
+		list-style: none;
+		width: 100px;
+		height: 50px;
+		margin-top: 10px;
+		background-color: #eeeeee;
+		border-radius: 20px 20px 0 0;
+		border: 1px solid #ccc;
+		text-align: center;
+		line-height: 50px;
+	}
+	.main-list .main-list-active{
+		background-color: #fff;
+		border-bottom: 0;
+	}
+	.content1{
+		width: 320px;
+		height: 200px;
+		border: 1px solid #ccc;
+		float: left;
+		margin: 0 5px;
+		text-align: center;
+		line-height: 200px;
+		margin-top: 10px;
+	}
+	.content2{
+		width: 238px;
+		height: 200px;
+		border: 1px solid #ccc;
+		margin: 0 5px;
+		margin-top: 10px;
+		float: left;
+		text-align: center;
+		line-height: 200px;
+	}
+	.content, .row2, .row3{
+		margin-top: 10px;
+	}
+	/*footer*/
+	.footer{
+		width: 100%;
+		height: 60px;
+		background-color: #666666;
+		text-align: center;
+		line-height: 60px;
+		color: #fff;
+		margin-top: 10px;
+	}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="wrap">
+			<div class="logo">Logo</div>
+			<div class="nav">
+				<ul>
+					<li><a href="#">Login</a></li>
+					<li class="bn-active"><a href="#">R</a></li>
+					<li><a href="#">Github</a></li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- header end -->
+	<div class="banner">
+		<ul>
+			<li><a href="#">1</a></li>
+			<li><a href="#" class="bn-active">2</a></li>
+			<li><a href="#">3</a></li>
+		</ul>
+	</div><!-- banner end -->
+	<div class="main clearfix">
+		<div class="main-list">
+			<div class="wrap">
+				<ul>
+					<li class="main-list-active">HOME</li>
+					<li>PROFILE</li>
+					<li>ABOUT</li>
+				</ul>
+			</div>
+		</div>
+		<div class="wrap content">
+			<div class="row1">
+				<div class="content1">content1</div>
+				<div class="content1">content1</div>
+				<div class="content1">content1</div>
+			</div>
+			<div class="row2">
+				<div class="content2">content2</div>
+				<div class="content2">content2</div>
+				<div class="content2">content2</div>
+				<div class="content2">content2</div>
+			</div>
+			<div class="row3">
+			<div class="content1">content1</div>
+			<div class="content1">content1</div>
+			<div class="content1">content1</div>
+			</div>
+		</div>
+	</div><!-- main end -->
+	<div class="footer">
+		&copy; 2018 ife.baidu.com
+	</div>
+</body>
+</html>
