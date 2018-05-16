@@ -9,7 +9,7 @@
 		padding: 0;
 	}
 	body{
-		min-width: 1000px;
+		min-width: 800px;
 	}
 	.wrap{
 		width: 1000px;
@@ -38,9 +38,6 @@
 		line-height: 60px;
 		float: left;
 	}
-	.nav{
-		font-size: 14px;
-	}
 	.nav li{
 		float: right;
 		list-style: none;
@@ -56,20 +53,23 @@
 	/*banner*/
 	.banner{
 		width: 100%;
-		height: 300px;
+/*		height: 300px;*/
 		background-color: #66BB33;
+	}
+	.banner .bn-wrap{
+		width: 1000px;
+		height: 300px;
+		margin: 0 auto;
 		position: relative;
 	}
 	.banner ul{
 		position: absolute;
-		bottom: 10px;
-		right: 200px;
+		bottom: 3%;
+		right: 3%;
 	}
 	.banner li{
 		float: left;
 		list-style: none;
-	}
-	.banner li a{
 		display: inline-block;
 		width: 20px;
 		height: 20px;
@@ -77,12 +77,14 @@
 		background-color: #B2DD99;
 		text-align: center;
 		line-height: 20px;
-		margin-right: 5px;
+		margin-right: 10px;
 	}
-	/*.banner .bn-active{
+	.banner li.bn-active{
 		height: 30px;
 		background-color: #fff;
-	}*/
+		position: relative;
+		bottom: 10px;
+	}
 	/*main*/
 	.main-list{
 		width: 100%;
@@ -101,7 +103,7 @@
 		text-align: center;
 		line-height: 50px;
 	}
-	.main-list .main-list-active{
+	.main-list li.main-list-active{
 		background-color: #fff;
 		border-bottom: 0;
 	}
@@ -110,22 +112,22 @@
 		height: 200px;
 		border: 1px solid #ccc;
 		float: left;
-		margin: 0 5px;
+		margin: 0 6px;
 		text-align: center;
 		line-height: 200px;
-		margin-top: 10px;
+		box-sizing: border-box;
 	}
 	.content2{
-		width: 238px;
+		width: 237px;
 		height: 200px;
 		border: 1px solid #ccc;
-		margin: 0 5px;
-		margin-top: 10px;
+		margin: 0 6px;
 		float: left;
 		text-align: center;
 		line-height: 200px;
+		box-sizing: border-box;
 	}
-	.content, .row2, .row3{
+	.row1, .row2, .row3{
 		margin-top: 10px;
 	}
 	/*footer*/
@@ -154,11 +156,14 @@
 		</div>
 	</div><!-- header end -->
 	<div class="banner">
-		<ul>
-			<li><a href="#">1</a></li>
-			<li><a href="#" class="bn-active">2</a></li>
-			<li><a href="#">3</a></li>
-		</ul>
+		<div class="bn-wrap">
+			<ul>
+				<li>1</li>
+				<li class="bn-active">2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+		</div>
 	</div><!-- banner end -->
 	<div class="main clearfix">
 		<div class="main-list">
@@ -171,21 +176,21 @@
 			</div>
 		</div>
 		<div class="wrap content">
-			<div class="row1">
+			<div class="row1 clearfix">
 				<div class="content1">content1</div>
 				<div class="content1">content1</div>
 				<div class="content1">content1</div>
 			</div>
-			<div class="row2">
+			<div class="row2 clearfix">
 				<div class="content2">content2</div>
 				<div class="content2">content2</div>
 				<div class="content2">content2</div>
 				<div class="content2">content2</div>
 			</div>
-			<div class="row3">
-			<div class="content1">content1</div>
-			<div class="content1">content1</div>
-			<div class="content1">content1</div>
+			<div class="row3 clearfix">
+				<div class="content1">content1</div>
+				<div class="content1">content1</div>
+				<div class="content1">content1</div>
 			</div>
 		</div>
 	</div><!-- main end -->
